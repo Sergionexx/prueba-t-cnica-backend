@@ -17,6 +17,19 @@
 El proyecto ya se encuentra listo para acceder a la base de datos  
 
 
+# Proceso de desarrollo
+
+*Lo primero que hice fue configurar la base de datos en mongo, creando las collecciones segund el modelo del documento de la entrevista técnica 
+![Backend](/Imgs/0b.png)
+
+*Y generé credenciales de acceso a la base, las cúales utilizaria luego en el backend.
+![Backend](/Imgs/01b.png) 
+
+*Luego en el proyecto realicé la conexión con mongo usando las credenciales generadas previamente.
+![Backend](/Imgs/02b.png) 
+
+
+
 
 
 
