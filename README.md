@@ -5,11 +5,12 @@
 - npm 6 o superior
 
 
-#### Pasos para levantar el Backend
+## Pasos para levantar el Backend
 
 * Clonar o descargar este repositorio
-* Instalar las dependencias de Node: Dentro de  la carpeta donde se descargó o clono el proyecto ejecute una terminal (click derecho -> terminal) y escriba el siguiente  comando: __npm i__ 
-* Levantar el Backend: En la misma __Terminal__ que uso en el paso anterior ejecute el siguiente comando __node src/app.js__ . Esto levantará el servidor en su entorno local en el puerto 3001.   
+* Instalar las dependencias de Node: Dentro de  la carpeta donde se descargó o clonó el proyecto ejecute una terminal (click derecho -> terminal) y escriba el siguiente  comando: __npm i__ 
+* Levantar el Backend: En la misma __Terminal__ que uso en el paso anterior ejecute el siguiente comando __node src/app.js__     . Esto levantará el servidor en su entorno local en el puerto 3001.   
+* Realizado estos pasos, puede levantar el proyecto de [Angular](https://github.com/Sergionexx/prueba-t-cnica-frontend)
 
 
 ##### Nota
