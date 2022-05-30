@@ -1,0 +1,289 @@
+{
+	"info": {
+		"_postman_id": "1486899e-3345-45a8-944d-63cfd1bd189f",
+		"name": "PruebaTécnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "cliente",
+			"item": [
+				{
+					"name": "Get all data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/get-all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"get-all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/get-by-id/6293ea6374a38d262496d3bb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"get-by-id",
+								"6293ea6374a38d262496d3bb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Rolando23\",    \r\n    \"lastname\":\"Monteros\",\r\n    \"phone\":\"0\",\r\n    \"street\":\"El Inca\",\r\n    \"zipCode\":\"0\"    \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"_id\":\"62912dc1ea32160f3291547f\",\r\n    \"name\":\"Sergio\",    \r\n    \"lastname\":\"Monteros\",\r\n    \"phone\":\"0978982187\",\r\n    \"street\":\"El Inca\",\r\n    \"zipCode\":\"17205\"   \r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/update-by-id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"update-by-id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/delete-by-id/6293b7d6d14f605bec8d085d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"delete-by-id",
+								"6293b7d6d14f605bec8d085d"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "producto",
+			"item": [
+				{
+					"name": "Create Product",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"UPC\":\"123\",\r\n\"proName\":\"Teclado\",\r\n\"mfgr\":\"China\",\r\n\"model\":\"e14\",\r\n\"unitListPrice\":\"35.00\",\r\n\"unitsInStock\":\"12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/create-product",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"create-product"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/get-all-products",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"get-all-products"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"_id\":\"6293f224ff348b5540ccb804\",\r\n    \"UPC\":\"123\",\r\n    \"proName\":\"Teclado\",\r\n    \"mfgr\":\"EEUU\",\r\n    \"model\":\"e14\",\r\n    \"unitListPrice\":\"35.00\",\r\n    \"unitsInStock\":\"12\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/update-product-by-id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"update-product-by-id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ordenes",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"orderDate\":\"29/5/2022\",\r\n    \"soldBy\":\"Carlos\",\r\n    \"total\":\"45\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/create-order",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"create-order"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all data",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/get-all-orders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"get-all-orders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n     \"_id\": \"6293f990a4bf2f3bccd5f905\",\r\n     \"orderDate\":\"29/5/2022\",\r\n    \"soldBy\":\"Sergio\",\r\n    \"total\":\"45\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/update-order-by-id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"update-order-by-id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
